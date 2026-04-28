@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Physics Will Save AI — Informed Investors Forum 2026</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  /* ── Base Reset ── */
+  :root {
+    --dark:    #0b0e14;
+    --dark2:   #131720;
+    --dark3:   #1a1f2e;
+    --light:   #e6edf3;
+    --muted:   #7d8590;
+    --amber:   #f0883e;
+    --blue:    #58a6ff;
+    --red:     #f85149;
+    --green:   #3fb950;
+    --white:   #ffffff;
+  }
+
+  .reveal {
+    font-family: 'Inter', -apple-system, sans-serif;
+    color: var(--light);
+  }
+  .reveal .slides {
+    text-align: left;
+  }
+  .reveal .slides section {
+    padding: 40px 60px;
+    box-sizing: border-box;
+    height: 100% !important;
+    top: 0 !important;
+  }
+  .reveal h1, .reveal h2, .reveal h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: var(--white);
+    text-transform: none;
+    letter-spacing: -0.02em;
+  }
+  .reveal .slide-background {
+    background: var(--dark);
+  }
+  .reveal blockquote {
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    font-style: normal;
+    width: 100%;
+    background: none;
+  }
+
+  /* ── Slide 1: Title ── */
+  .slide-title {
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(ellipse at 50% 40%, #1a2040 0%, var(--dark) 70%) !important;
+  }
+  .slide-title h1 {
+    font-size: 5.0em;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 0.15em;
+    background: linear-gradient(135deg, var(--white) 0%, #c0c8d8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .slide-title .venue {
+    font-size: 1.0em;
+    font-weight: 300;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+    margin-top: 1.5em;
+  }
+  .slide-title .venue strong {
+    color: var(--amber);
+    font-weight: 600;
+  }
+
+  /* ── Slide 2: Video ── */
+  .slide-video {
+    background: #000 !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
+  }
+  .slide-video video {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0;
+  }
+
+  /* ── Slide 3: He's two ── */
+  .slide-hes-two {
+    background: #000 !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center !important;
+  }
+  .slide-hes-two p {
+    font-size: 4.5em;
+    font-weight: 900;
+    color: var(--white);
+    margin: 0;
+    letter-spacing: -0.03em;
+  }
+
+  /* ── Slide 4: The Turn ── */
+  .slide-turn {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center !important;
+    background: radial-gradient(ellipse at 50% 50%, #1f1510 0%, var(--dark) 70%) !important;
+  }
+  .slide-turn p {
+    font-size: 2.8em;
+    font-weight: 600;
+    color: var(--amber);
+    line-height: 1.4;
+    max-width: 18em;
+  }
+
+  /* ── Slide 5: Token Chain ── */
+  .slide-tokens {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center !important;
+    background: var(--dark2) !important;
+  }
+  .slide-tokens svg {
+    margin-bottom: 60px;
+  }
+  .slide-tokens .bottom-line {
+    font-size: 1.8em;
+    font-weight: 300;
+    color: var(--muted);
+    max-width: 20em;
+  }
+  .slide-tokens .bottom-line em {
+    color: var(--amber);
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  /* ── Slide 6: Hapax — Impossible Structure ── */
+  .slide-hapax {
+    background: #f5f5f0 !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
+  }
+  .slide-hapax svg {
+    width: 700px;
+    height: 700px;
+  }
+
+  /* ── Slide 7: Punchline ── */
+  .slide-punchline {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center !important;
+    background: radial-gradient(ellipse at 50% 50%, #1a1520 0%, var(--dark) 80%) !important;
+  }
+  .slide-punchline .line1 {
+    font-size: 3.5em;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 0.3em;
+  }
+  .slide-punchline .line2 {
+    font-size: 2.8em;
+    font-weight: 400;
+    color: var(--amber);
+    max-width: 16em;
+    line-height: 1.3;
+  }
+
+  /* ── Slide 8: The Debate ── */
+  .slide-debate {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--dark2) !important;
+  }
+  .slide-debate h2 {
+    text-align: center;
+    font-size: 2.0em;
+    color: var(--muted);
+    font-weight: 300;
+    margin-bottom: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+  .slide-debate .camps {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: stretch;
+  }
+  .slide-debate .camp {
+    flex: 1;
+    max-width: 560px;
+    padding: 50px;
+    border-radius: 16px;
+  }
+  .slide-debate .camp-scale {
+    background: rgba(88, 166, 255, 0.08);
+    border: 1px solid rgba(88, 166, 255, 0.2);
+  }
+  .slide-debate .camp-world {
+    background: rgba(240, 136, 62, 0.08);
+    border: 1px solid rgba(240, 136, 62, 0.2);
+  }
+  .slide-debate .camp h3 {
+    font-size: 1.8em;
+    margin-bottom: 0.6em;
+  }
+  .slide-debate .camp-scale h3 { color: var(--blue); }
+  .slide-debate .camp-world h3 { color: var(--amber); }
+  .slide-debate .camp .names {
+    font-size: 1.1em;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+  .slide-debate .camp .amount {
+    font-size: 3.0em;
+    font-weight: 900;
+    margin-top: 0.4em;
+  }
+  .slide-debate .camp-scale .amount { color: var(--blue); }
+  .slide-debate .camp-world .amount { color: var(--amber); }
+
+  /* ── Slide 9: The Seam ── */
+  .slide-seam {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center !important;
+    background: radial-gradient(ellipse at 50% 50%, #141a28 0%, var(--dark) 70%) !important;
+  }
+  .slide-seam svg {
+    margin-bottom: 40px;
+  }
+  .slide-seam .tagline {
+    font-size: 2.2em;
+    font-weight: 600;
+    color: var(--white);
+  }
+  .slide-seam .tagline em {
+    color: var(--amber);
+    font-style: normal;
+  }
+
+  /* ── Slide 10: Case 1 Robotics ── */
+  .slide-robotics {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(160deg, var(--dark3) 0%, var(--dark) 100%) !important;
+  }
+  .slide-robotics .case-num {
+    font-size: 12em;
+    font-weight: 900;
+    color: rgba(88, 166, 255, 0.15);
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    line-height: 1;
+  }
+  .slide-robotics h2 {
+    font-size: 3.2em;
+    color: var(--blue);
+    margin-bottom: 0.3em;
+  }
+  .slide-robotics .sub {
+    font-size: 1.5em;
+    color: var(--muted);
+    font-weight: 300;
+    max-width: 18em;
+    line-height: 1.5;
+  }
+
+  /* ── Slide 11: Case 2 R&D ── */
+  .slide-rnd {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center !important;
+    background: linear-gradient(160deg, var(--dark3) 0%, var(--dark) 100%) !important;
+  }
+  .slide-rnd .case-num {
+    font-size: 12em;
+    font-weight: 900;
+    color: rgba(63, 185, 80, 0.15);
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    line-height: 1;
+  }
+  .slide-rnd h2 {
+    font-size: 3.2em;
+    color: var(--green);
+    margin-bottom: 0.6em;
+  }
+  .slide-rnd .transform {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-weight: 900;
+  }
+  .slide-rnd .transform .old {
+    font-size: 5.0em;
+    color: var(--muted);
+    text-decoration: line-through;
+    text-decoration-color: var(--red);
+    text-decoration-thickness: 4px;
+  }
+  .slide-rnd .transform .arrow {
+    font-size: 3.5em;
+    color: var(--green);
+  }
+  .slide-rnd .transform .new {
+    font-size: 5.0em;
+    color: var(--green);
+  }
+
+  /* ── Slide 12: Case 3 Safety ── */
+  .slide-safety {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(160deg, var(--dark3) 0%, var(--dark) 100%) !important;
+  }
+  .slide-safety .case-num {
+    font-size: 12em;
+    font-weight: 900;
+    color: rgba(240, 136, 62, 0.12);
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    line-height: 1;
+  }
+  .slide-safety h2 {
+    font-size: 3.2em;
+    color: var(--amber);
+    margin-bottom: 0.3em;
+  }
+  .slide-safety .sub {
+    font-size: 1.5em;
+    color: var(--muted);
+    font-weight: 300;
+    max-width: 22em;
+    line-height: 1.5;
+  }
+
+  /* ── Slide 13: 200+ Patents ── */
+  .slide-patents {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center !important;
+    background: var(--dark) !important;
+  }
+  .slide-patents .big-num {
+    font-size: 10em;
+    font-weight: 900;
+    color: var(--white);
+    line-height: 1;
+    letter-spacing: -0.04em;
+  }
+  .slide-patents .label {
+    font-size: 1.6em;
+    font-weight: 300;
+    color: var(--muted);
+    margin-top: 0.2em;
+  }
+
+  /* ── Slide 14: Aviation Safety ── */
+  .slide-one-in-ten {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center !important;
+    background: radial-gradient(ellipse at 50% 50%, #0f1a14 0%, var(--dark) 70%) !important;
+  }
+  .slide-one-in-ten .stat {
+    font-size: 6.0em;
+    font-weight: 900;
+    color: var(--green);
+    line-height: 1;
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: -0.03em;
+  }
+  .slide-one-in-ten .explain {
+    font-size: 1.6em;
+    font-weight: 300;
+    color: var(--muted);
+    margin-top: 0.8em;
+    max-width: 16em;
+  }
+
+  /* ── Slide 15: Building ── */
+  .slide-building {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center !important;
+    background: radial-gradient(ellipse at 50% 50%, #1a1520 0%, var(--dark) 80%) !important;
+  }
+  .slide-building .line1 {
+    font-size: 2.8em;
+    font-weight: 600;
+    color: var(--white);
+    max-width: 16em;
+    line-height: 1.4;
+    margin-bottom: 0.6em;
+  }
+  .slide-building .line2 {
+    font-size: 2.0em;
+    font-weight: 300;
+    color: var(--amber);
+  }
+
+  /* ── Slide 16: Close / Q&A ── */
+  .slide-close {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center !important;
+    background: radial-gradient(ellipse at 50% 40%, #1a2040 0%, var(--dark) 70%) !important;
+  }
+  .slide-close .thesis {
+    font-size: 2.2em;
+    font-weight: 400;
+    color: var(--light);
+    max-width: 20em;
+    line-height: 1.5;
+    margin-bottom: 1.2em;
+  }
+  .slide-close .thesis em {
+    color: var(--amber);
+    font-style: normal;
+    font-weight: 700;
+  }
+  .slide-close .contact {
+    font-size: 1.1em;
+    color: var(--muted);
+    line-height: 1.8;
+  }
+  .slide-close .contact strong {
+    color: var(--light);
+    font-weight: 600;
+  }
+
+  /* ── HUD SVG for safety slide ── */
+  .slide-safety svg.hud {
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.15;
+  }
+
+  /* ── Speaker notes styling ── */
+  .reveal aside.notes {
+    display: none !important;
+  }
+</style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+
+<!-- ════════════════════════════════════════════════════════
+     SLIDE 1 — TITLE
+     ════════════════════════════════════════════════════════ -->
+<section class="slide-title" data-background="radial-gradient(ellipse at 50% 40%, #1a2040 0%, #0b0e14 70%)">
+  <h1>Why Physics<br>Will Save AI</h1>
+  <div class="venue">
+    <strong>Informed Investors Forum</strong> by Stanford &middot; PARC<br>
+    April 28, 2026
+  </div>
+  <aside class="notes">
+    Don't linger. This is a 3-second slide. Say your name and go immediately to the video.
+    "I'm [name]. I want to show you something."
+  </aside>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SLIDE 2 — TODDLER VIDEO
+     ════════════════════════════════════════════════════════ -->
+<section class="slide-video" data-background="#000">
+  <video src="toddler-clip.mp4" controls playsinline style="max-height:680px;"></video>
+  <aside class="notes">
+    Press play. Let the clip run (~10 sec). Narrate over it:
+    "A toddler watches an adult walk toward a cabinet, arms full, and bump into the closed door.
+    The kid — barely walking — toddles over and opens it.
+    No one taught him. No one praised him for it before."
+    Pause 2 beats after clip ends. Then move to next slide.
+  </aside>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SLIDE 3 — HE'S TWO
+     ════════════════════════════════════════════════════════ -->
+<section class="slide-hes-two" data-background="#000">
+  <p>He's two.</p>
+  <aside class="notes">
+    Say it simply: "He's two."
+    Let it land. Full 3-second pause.
+    "He's running, in real time, a model of what the adult is trying to do,
+    what's preventing him, and what physical action will fix it.
+    He's also running a model of how doors, hinges, and gravity work."
+    Beat. Then advance.
+  </aside>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SLIDE 4 — THE TURN
+     ════════════════════════════════════════════════════════ -->
+<section class="slide-turn" data-background="radial-gradient(ellipse at 50% 50%, #1f1510 0%, #0b0e14 70%)">
+  <p>Frontier LLMs will confidently tell you<br>the magazines pass through the door.</p>
+  <aside class="notes">
+    Shift tone — drier, factual.
+    "Frontier LLMs in 2026, after hundreds of billions of dollars of training,
+    will confidently tell you the magazines pass through the cabinet door."
+    Pause.
+    "We've built systems that can write a sonnet in the style of Milton,
+    but cannot reliably reason about a door."
+  </aside>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SLIDE 5 — TOKEN PREDICTION
+     ════════════════════════════════════════════════════════ -->
+<section class="slide-tokens" data-background="#131720">
+  <!-- Inline SVG: token chain -->
+  <svg width="1200" height="210" viewBox="0 0 900 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Token boxes -->
+    <rect x="10" y="50" width="100" height="60" rx="8" fill="rgba(88,166,255,0.12)" stroke="#58a6ff" stroke-width="1.5"/>
+    <text x="60" y="88" text-anchor="middle" fill="#58a6ff" font-family="JetBrains Mono" font-size="18" font-weight="700">The</text>
+
+    <rect x="155" y="50" width="100" height="60" rx="8" fill="rgba(88,166,255,0.12)" stroke="#58a6ff" stroke-width="1.5"/>
+    <text x="205" y="88" text-anchor="middle" fill="#58a6ff" font-family="JetBrains Mono" font-size="18" font-weight="700">door</text>
+
+    <rect x="300" y="50" width="100" height="60" rx="8" fill="rgba(88,166,255,0.12)" stroke="#58a6ff" stroke-width="1.5"/>
+    <text x="350" y="88" text-anchor="middle" fill="#58a6ff" font-family="JetBrains Mono" font-size="18" font-weight="700">opens</text>
+
+    <rect x="445" y="50" width="100" height="60" rx="8" fill="rgba(88,166,255,0.12)" stroke="#58a6ff" stroke-width="1.5"/>
+    <text x="495" y="88" text-anchor="middle" fill="#58a6ff" font-family="JetBrains Mono" font-size="18" font-weight="700">and</text>
+
+    <rect x="590" y="50" width="100" height="60" rx="8" fill="rgba(88,166,255,0.12)" stroke="#58a6ff" stroke-width="1.5"/>
+    <text x="640" y="88" text-anchor="middle" fill="#58a6ff" font-family="JetBrains Mono" font-size="18" font-weight="700">the</text>
+
+    <rect x="735" y="50" width="150" height="60" rx="8" fill="rgba(248,81,73,0.12)" stroke="#f85149" stroke-width="2"/>
+    <text x="810" y="88" text-anchor="middle" fill="#f85149" font-family="JetBrains Mono" font-size="18" font-weight="700">magazines</text>
+    <text x="810" y="32" text-anchor="middle" fill="#f85149" font-family="Inter" font-size="13" font-weight="400">p = 0.73</text>
+
+    <!-- Arrows -->
+    <line x1="113" y1="80" x2="152" y2="80" stroke="#3d444d" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <line x1="258" y1="80" x2="297" y2="80" stroke="#3d444d" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <line x1="403" y1="80" x2="442" y2="80" stroke="#3d444d" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <line x1="548" y1="80" x2="587" y2="80" stroke="#3d444d" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <line x1="693" y1="80" x2="732" y2="80" stroke="#3d444d" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <!-- ghosted correct answer -->
+    <rect x="735" y="50" width="150" height="60" rx="8" fill="none" stroke="#3fb950" stroke-width="1" stroke-dasharray="6 4" opacity="0.3"/>
+    <text x="810" y="145" text-anchor="middle" fill="#3fb950" font-family="JetBrains Mono" font-size="13" opacity="0.4">he walks around</text>
+
+    <defs>
+      <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+        <polygon points="0 0, 8 3, 0 6" fill="#3d444d"/>
+      </marker>
+    </defs>
+  </svg>
+  <div class="bottom-line">Most likely next token &ne; <em>physically true</em> next state</div>
+  <aside class="notes">
+    "LLMs predict the next plausible token. They have no model of consequences in the physical world."
+    Point at the chain. "The system picks 'magazines' as the next word because that's statistically likely
+    in the training data. The physically correct answer — 'he walks around' — is less probable as text."
+    "This isn't a bug that scaling will fix. Recent results show hallucination is structural."
+  </aside>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SLIDE 6 — HAPAX LEGOMENON: IMPOSSIBLE STRUCTURE
+     Not narrated. Pause and let the audience look.
+     ════════════════════════════════════════════════════════ -->
+<section class="slide-hapax" data-background="#f5f5f0">
+  <svg width="700" height="700" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg">
+    <!-- Penrose / Impossible Triangle with architectural rendering style -->
+    <g transform="translate(350, 360)">
+      <!-- Outer impossible triangle -->
+      <polygon points="0,-220  190,110  -190,110"
+               fill="none" stroke="#2a2a2a" stroke-width="2"/>
+
+      <!-- Beam A: top to bottom-right — with architectural hatching -->
+      <g>
+        <polygon points="-15,-210  195,100  175,100  -35,-190  -15,-210"
+                 fill="#e8e4de" stroke="#2a2a2a" stroke-width="1.5"/>
+        <polygon points="15,-210  205,100  195,100  -15,-210"
+                 fill="#d6d2cc" stroke="#2a2a2a" stroke-width="1.5"/>
+        <!-- Cross-hatching suggesting steel -->
+        <line x1="30" y1="-170" x2="45" y2="-170" stroke="#999" stroke-width="0.5"/>
+        <line x1="60" y1="-120" x2="75" y2="-120" stroke="#999" stroke-width="0.5"/>
+        <line x1="90" y1="-70" x2="105" y2="-70" stroke="#999" stroke-width="0.5"/>
+        <line x1="120" y1="-20" x2="135" y2="-20" stroke="#999" stroke-width="0.5"/>
+        <line x1="150" y1="30" x2="165" y2="30" stroke="#999" stroke-width="0.5"/>
+      </g>
+
+      <!-- Beam B: bottom-right to bottom-left — with impossible overlap -->
+      <g>
+        <polygon points="200,105  -200,105  -180,85  180,85"
+                 fill="#d6d2cc" stroke="#2a2a2a" stroke-width="1.5"/>
+        <polygon points="200,125  -200,125  -200,105  200,105"
+                 fill="#ccc8c0" stroke="#2a2a2a" stroke-width="1.5"/>
+        <line x1="-130" y1="95" x2="-130" y2="115" stroke="#999" stroke-width="0.5"/>
+        <line x1="-60" y1="95" x2="-60" y2="115" stroke="#999" stroke-width="0.5"/>
+        <line x1="10" y1="95" x2="10" y2="115" stroke="#999" stroke-width="0.5"/>
+        <line x1="80" y1="95" x2="80" y2="115" stroke="#999" stroke-width="0.5"/>
+        <line x1="150" y1="95" x2="150" y2="115" stroke="#999" stroke-width="0.5"/>
+      </g>
+
+      <!-- Beam C: bottom-left to top — impossible joint at top -->
+      <g>
+        <polygon points="-205,100  -5,-220  15,-210  -175,100"
+                 fill="#e0dcd6" stroke="#2a2a2a" stroke-width="1.5"/>
+        <polygon points="-205,100  -195,100  5,-210  -5,-220"
+                 fill="#eae6e0" stroke="#2a2a2a" stroke-width="1.5"/>
+        <line x1="-160" y1="30" x2="-145" y2="30" stroke="#999" stroke-width="0.5"/>
+        <line x1="-130" y1="-20" x2="-115" y2="-20" stroke="#999" stroke-width="0.5"/>
+        <line x1="-100" y1="-70" x2="-85" y2="-70" stroke="#999" stroke-width="0.5"/>
+        <line x1="-70" y1="-120" x2="-55" y2="-120" stroke="#999" stroke-width="0.5"/>
+        <line x1="-40" y1="-170" x2="-25" y2="-170" stroke="#999" stroke-width="0.5"/>
+      </g>
+
+      <!-- Impossible overlap regions — the key visual trick -->
+      <!-- Top joint: beam C appears to go BEHIND beam A, but beam A goes behind beam B, and beam B goes behind beam C -->
+      <polygon points="-15,-210  15,-210  5,-195  -5,-195"
+               fill="#e0dcd6" stroke="#2a2a2a" stroke-width="1"/>
+      <polygon points="175,100  205,100  205,125  175,125"
+               fill="#d6d2cc" stroke="#2a2a2a" stroke-width="1"/>
+      <polygon points="-205,100  -175,100  -175,125  -205,125"
+               fill="#e0dcd6" stroke="#2a2a2a" stroke-width="1"/>
+
+      <!-- Force arrows — look professional but violate equilibrium -->
+      <g stroke-width="2.5" fill="none">
+        <!-- Arrow on beam A: pointing outward (wrong — should be along beam) -->
+        <line x1="100" y1="-55" x2="130" y2="-80" stroke="#c0392b"/>
+        <polygon points="130,-80  120,-72  125,-85" fill="#c0392b" stroke="none"/>
+
+        <!-- Arrow on beam B: pointing down (gravity, but at wrong location) -->
+        <line x1="0" y1="95" x2="0" y2="60" stroke="#c0392b"/>
+        <polygon points="0,60  -6,70  6,70" fill="#c0392b" stroke="none"/>
+
+        <!-- Arrow on beam C: pointing outward (symmetric but wrong) -->
+        <line x1="-100" y1="-55" x2="-130" y2="-80" stroke="#c0392b"/>
+        <polygon points="-130,-80  -120,-72  -125,-85" fill="#c0392b" stroke="none"/>
+
+        <!-- Moment indicators at joints — circular arrows that don't balance -->
+        <path d="M 0,-195 A 15,15 0 1,1 -10,-182" stroke="#2980b9" stroke-width="1.5"/>
+        <polygon points="-10,-182  -5,-188  -15,-188" fill="#2980b9" stroke="none"/>
+
+        <path d="M 188,112 A 15,15 0 1,1 198,100" stroke="#2980b9" stroke-width="1.5"/>
+        <polygon points="198,100  192,108  202,105" fill="#2980b9" stroke="none"/>
+
+        <path d="M -188,112 A 15,15 0 1,0 -198,100" stroke="#2980b9" stroke-width="1.5"/>
+        <polygon points="-198,100  -192,108  -202,105" fill="#2980b9" stroke="none"/>
+      </g>
+
+      <!-- Dimension lines — engineering drawing style -->
+      <g stroke="#888" stroke-width="0.5" fill="#888" font-family="JetBrains Mono" font-size="11">
+        <line x1="220" y1="120" x2="20" y2="-230" stroke-dasharray="4 3"/>
+        <text x="130" y="-60" transform="rotate(-60, 130, -60)" text-anchor="middle">W12×26</text>
+
+        <line x1="-220" y1="140" x2="220" y2="140"/>
+        <text x="0" y="158" text-anchor="middle">24'-0"</text>
+      </g>
+    </g>
+
+    <!-- Subtle label at bottom -->
+    <text x="350" y="680" text-anchor="middle" fill="#aaa" font-family="Inter" font-size="14" font-weight="300" letter-spacing="0.1em">GENERATED STRUCTURAL DETAIL</text>
+  </svg>
+  <aside class="notes">
+    DO NOT NARRATE THIS SLIDE. This is the hapax legomenon.
+    Advance to it. Pause 4–5 full seconds. Let the audience look.
+    The force arrows and member sizes look like a real engineering drawing,
+    but the structure is physically impossible (Penrose triangle) and the forces don't balance.
+    This IS the point — it looks right and violates basic physics.
+    Then advance silently to the punchline slide.
+  </aside>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SLIDE 7 — PUNCHLINE
+     ════════════════════════════════════════════════════════ -->
+<section class="slide-punchline" data-background="radial-gradient(ellipse at 50% 50%, #1a1520 0%, #0b0e14 80%)">
+  <div class="line1">Hallucination isn't a quirk.</div>
+  <div class="line2 fragment">It's what you get when a system has<br>language without a world.</div>
+  <aside class="notes">
+    Deliver the first line. Pause 2 beats.
+    Click to reveal the second line. Say it slowly, with weight.
+    "Hallucination isn't a quirk. It's what you get when a system has language… without a world."
+    Let it settle. This is the thesis statement — first of four times you'll cycle it.
+  </aside>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SLIDE 8 — THE LIVE DEBATE
+     ════════════════════════════════════════════════════════ -->
+<section class="slide-debate" data-background="#131720">
+  <h2>The Live Debate</h2>
+  <div class="camps">
+    <div class="camp camp-scale">
+      <h3>"Scale the LLMs"</h3>
+      <div class="names">
+        Dario Amodei<br>
+        Sam Altman<br>
+        Demis Hassabis
+      </div>
+      <div class="amount">∞ tokens</div>
+    </div>
+    <div class="camp camp-world">
+      <h3>"Build World Models"</h3>
+      <div class="names">
+        Yann LeCun — AMI Labs<br>
+        Fei-Fei Li — World Labs
+      </div>
+      <div class="amount">$2B</div>
+    </div>
+  </div>
+  <aside class="notes">
+    "There is a live debate happening right now among the people who are spending the most money on AI."
+    Gesture left: "One camp — Amodei, Altman, Hassabis — says scale the LLMs. Hallucinations will fall.
+    Nobel-level reasoning within two years. Amodei said this at Davos in January."
+    Gesture right: "The other camp — LeCun and Fei-Fei Li — in three weeks in early 2026
+    collectively raised about two billion dollars against the LLM thesis.
+    LeCun's AMI Labs: one billion at a three-and-a-half billion valuation.
+    Li's World Labs: roughly a billion in February."
+    "Both bets argue the path to real intelligence runs through world models —
+    systems that learn physics from observation, not text."
+  </aside>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SLIDE 9 — THE SEAM
+     ════════════════════════════════════════════════════════ -->
+<section class="slide-seam" data-background="radial-gradient(ellipse at 50% 50%, #141a28 0%, #0b0e14 70%)">
+  <svg width="900" height="440" viewBox="0 0 700 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Left circle: Language Models -->
+    <circle cx="260" cy="170" r="150" fill="rgba(88,166,255,0.08)" stroke="#58a6ff" stroke-width="1.5"/>
+    <text x="180" y="170" text-anchor="middle" fill="#58a6ff" font-family="Inter" font-size="20" font-weight="600">Language</text>
+    <text x="180" y="196" text-anchor="middle" fill="#58a6ff" font-family="Inter" font-size="20" font-weight="600">Models</text>
+
+    <!-- Right circle: World Models -->
+    <circle cx="440" cy="170" r="150" fill="rgba(240,136,62,0.08)" stroke="#f0883e" stroke-width="1.5"/>
+    <text x="520" y="170" text-anchor="middle" fill="#f0883e" font-family="Inter" font-size="20" font-weight="600">World</text>
+    <text x="520" y="196" text-anchor="middle" fill="#f0883e" font-family="Inter" font-size="20" font-weight="600">Models</text>
+
+    <!-- Overlap highlight -->
+    <clipPath id="clip-left">
+      <circle cx="260" cy="170" r="150"/>
+    </clipPath>
+    <circle cx="440" cy="170" r="150" fill="rgba(255,255,255,0.06)" clip-path="url(#clip-left)"/>
+
+    <!-- "The Seam" label in overlap -->
+    <text x="350" y="165" text-anchor="middle" fill="#ffffff" font-family="Inter" font-size="22" font-weight="700">The</text>
+    <text x="350" y="193" text-anchor="middle" fill="#ffffff" font-family="Inter" font-size="22" font-weight="700">Seam</text>
+
+    <!-- Small glowing dot in center of overlap -->
+    <circle cx="350" cy="230" r="4" fill="#f0883e">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </svg>
+  <div class="tagline">The interesting money is in <em>the seam</em>.</div>
+  <aside class="notes">
+    "I think they're both half right."
+    Point at the overlap.
+    "The interesting money is in the seam between them —
+    language models that can talk to physics models, and reason about both."
+    Pause. "You're not picking a side. You're identifying where the value gets created."
+    This is thesis cycle #2.
+  </aside>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SLIDE 10 — CASE 1: ROBOTICS & AUTONOMY
+     ════════════════════════════════════════════════════════ -->
+<section class="slide-robotics" data-background="linear-gradient(160deg, #1a1f2e 0%, #0b0e14 100%)">
+  <div class="case-num">1</div>
+  <h2>Robotics &amp; Autonomy</h2>
+  <div class="sub">Anything that touches the physical world needs a model that doesn't hallucinate physics.</div>
+  <aside class="notes">
+    "Case one." (verbal punctuation — number it)
+    "Robotics and autonomy. This is why Toyota, NVIDIA, and Bezos backed the world-model bets.
+    Anything that touches the physical world — warehouse robots, eVTOLs, autonomous trucks,
+    agricultural automation — needs a model that doesn't hallucinate physics."
+    Drop in: "UP.Partners' portfolio — Skydio, Beta Technologies, UnitX — sits squarely here."
+  </aside>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SLIDE 11 — CASE 2: SCIENTIFIC R&D
+     ════════════════════════════════════════════════════════ -->
+<section class="slide-rnd" data-background="linear-gradient(160deg, #1a1f2e 0%, #0b0e14 100%)">
+  <div class="case-num">2</div>
+  <h2>Scientific R&amp;D</h2>
+  <div class="transform">
+    <span class="old">10 yrs</span>
+    <span class="arrow">→</span>
+    <span class="new">18 mo</span>
+  </div>
+  <aside class="notes">
+    "Case two."
+    "Scientific R&D — propulsion, materials, drug discovery, fusion."
+    Point at the numbers.
+    "Physics-informed models can propose chemistry that obeys conservation laws,
+    instead of suggesting reactions that violate thermodynamics.
+    The companies that crack this turn R&D from ten-year cycles into eighteen-month cycles.
+    That's worth tens of billions of dollars per modality."
+  </aside>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SLIDE 12 — CASE 3: ENGINEERED SYSTEMS
+     ════════════════════════════════════════════════════════ -->
+<section class="slide-safety" data-background="linear-gradient(160deg, #1a1f2e 0%, #0b0e14 100%)">
+  <div class="case-num">3</div>
+  <h2>Engineered Systems</h2>
+  <div class="sub">Aerospace · Energy · Medical devices<br><br>Modern avionics combine sensor fusion, dynamic models, and decision support — the result is the safest mode of transport in history.</div>
+  <!-- Subtle HUD-style artificial horizon -->
+  <svg class="hud" width="280" height="280" viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="140" cy="140" r="130" stroke="#f0883e" stroke-width="1"/>
+    <!-- Horizon line -->
+    <line x1="40" y1="140" x2="120" y2="140" stroke="#f0883e" stroke-width="2"/>
+    <line x1="160" y1="140" x2="240" y2="140" stroke="#f0883e" stroke-width="2"/>
+    <!-- Aircraft symbol -->
+    <circle cx="140" cy="140" r="4" fill="#f0883e"/>
+    <line x1="110" y1="140" x2="126" y2="140" stroke="#f0883e" stroke-width="2"/>
+    <line x1="154" y1="140" x2="170" y2="140" stroke="#f0883e" stroke-width="2"/>
+    <!-- Pitch lines -->
+    <line x1="115" y1="110" x2="165" y2="110" stroke="#f0883e" stroke-width="0.8"/>
+    <line x1="125" y1="80" x2="155" y2="80" stroke="#f0883e" stroke-width="0.8"/>
+    <line x1="115" y1="170" x2="165" y2="170" stroke="#f0883e" stroke-width="0.8"/>
+    <line x1="125" y1="200" x2="155" y2="200" stroke="#f0883e" stroke-width="0.8"/>
+    <!-- Bank angle marks -->
+    <line x1="140" y1="15" x2="140" y2="30" stroke="#f0883e" stroke-width="1"/>
+    <line x1="87" y1="27" x2="93" y2="41" stroke="#f0883e" stroke-width="1"/>
+    <line x1="193" y1="27" x2="187" y2="41" stroke="#f0883e" stroke-width="1"/>
+    <!-- Heading tick marks -->
+    <text x="140" y="265" text-anchor="middle" fill="#f0883e" font-family="JetBrains Mono" font-size="12">HDG 270</text>
+  </svg>
+  <aside class="notes">
+    "Case three. Engineered systems with safety consequences — aerospace, energy, medical devices."
+    Personal beat: "I fly single-pilot jets. Modern avionics combine sensor fusion,
+    dynamic models of the airframe, and decision support — and the result is the safest mode
+    of transport in human history."
+    Pause. "The question I'm asking is: what does that architecture look like applied to AI?"
+    Drop-in: "I spend part of my time as a venture partner at UP.Partners,
+    where we're investing in exactly this thesis across air, land, sea, and space."
+    This is thesis cycle #3.
+  </aside>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SLIDE 13 — 200+ PATENTS
+     ════════════════════════════════════════════════════════ -->
+<section class="slide-patents" data-background="#0b0e14">
+  <div class="big-num">200+</div>
+  <div class="label">patents</div>
+  <aside class="notes">
+    "I have over two hundred patents — mostly in domains where
+    if you get the physics wrong, something explodes or falls out of the sky."
+    Beat. Slight smile.
+    "That tends to focus the mind."
+    DO NOT list the patents. DO NOT read a bio. The number does the work.
+  </aside>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SLIDE 14 — 1 IN 10 MILLION
+     ════════════════════════════════════════════════════════ -->
+<section class="slide-one-in-ten" data-background="radial-gradient(ellipse at 50% 50%, #0f1a14 0%, #0b0e14 70%)">
+  <div class="stat">1 in 10,000,000</div>
+  <div class="explain">Not luck. Engineered honesty about physical reality.</div>
+  <aside class="notes">
+    "Aviation has a one-in-ten-million accident rate."
+    Point at the number.
+    "Not because pilots are smart, but because the system has been engineered
+    around honest models of physical reality and the limits of human cognition."
+    "The same discipline applied to AI will define the next decade —
+    and most teams building AI haven't even started thinking this way."
+  </aside>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SLIDE 15 — WHAT I'M BUILDING
+     ════════════════════════════════════════════════════════ -->
+<section class="slide-building" data-background="radial-gradient(ellipse at 50% 50%, #1a1520 0%, #0b0e14 80%)">
+  <div class="line1">Putting physical reasoning<br>into frontier LLMs.</div>
+  <div class="line2 fragment">Not ready to say more. Yet.</div>
+  <aside class="notes">
+    Lower your voice slightly. More intimate.
+    "I'm currently hacking on a new venture at exactly this seam —
+    putting physical reasoning into frontier LLMs."
+    Click to reveal "Not ready to say more. Yet."
+    Slight smile. "I'm not ready to say more in public yet,
+    but if this thesis interests you, this is the conversation I want to have."
+    Move on briskly.
+  </aside>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SLIDE 16 — CLOSE / Q&A
+     Stays up during Q&A.
+     ════════════════════════════════════════════════════════ -->
+<section class="slide-close" data-background="radial-gradient(ellipse at 50% 40%, #1a2040 0%, #0b0e14 70%)">
+  <div class="thesis">The two-year-old already knows what we're trying to teach the machines.<br><br>The companies that figure out how to <em>put that knowledge into the model</em> are the ones worth backing.</div>
+  <div class="contact">
+    <strong>cmbailey@mit.edu</strong><br>
+    Chief Invention Officer &middot; Venus Aerospace &middot; Loft Dynamics &middot; ZeroAvia &middot; Regent<br>
+    UP.Partners &middot; Robotics · Aerospace · Energy · Manufacturing · Biotech
+  </div>
+  <aside class="notes">
+    This is your close. Do NOT say thank you. Close with contributions (per Winston).
+    "If you have portfolio companies bumping into the physical world —
+    robotics, aerospace, energy, manufacturing, biotech —
+    and they're trying to bolt an LLM onto something that has actual consequences,
+    I'd love to compare notes."
+    Beat.
+    "The two-year-old already knows what we're trying to teach the machines.
+    The companies that figure out how to put that knowledge into the model
+    are the ones worth backing."
+    Leave this slide up. Take questions. This is thesis cycle #4.
+  </aside>
+</section>
+
+</div><!-- .slides -->
+</div><!-- .reveal -->
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script>
+  Reveal.initialize({
+    width: 1920,
+    height: 1080,
+    margin: 0,
+    minScale: 0.2,
+    maxScale: 2.0,
+    hash: true,
+    transition: 'fade',
+    transitionSpeed: 'slow',
+    controlsTutorial: false,
+    showNotes: false,
+    center: false,     // we handle centering per-slide via flexbox
+    embedded: false
+  });
+</script>
+</body>
+</html>
